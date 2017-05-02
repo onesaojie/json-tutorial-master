@@ -45,7 +45,7 @@ static int lept_parse_number(lept_context* c, lept_value* v){
     }
     if (*p == 'e' || *p == 'E'){
         p++;
-        if (*p == '+' || *p == 'E') p++;
+        if (*p == '+' || *p == '-') p++;
         if (!ISDIGIT(*p)) return LEPT_PARSE_INVALID_VALUE;
         for (p++; ISDIGIT(*p); p++);
     }
