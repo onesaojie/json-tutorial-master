@@ -71,3 +71,4 @@ lept_type lept_get_type(const lept_value* v){
     assert(v != NULL);
     return v->type;
 }
+
